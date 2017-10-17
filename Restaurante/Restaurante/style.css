@@ -1,0 +1,363 @@
+@import url("resetCss.css");
+
+@font-face{
+   font-family: "Tangerine";
+   font-style: normal;
+   font-weight: normal;
+   src: url(Fuentes/Tangerine/Tangerine-Regular.ttf);
+}
+
+@font-face{
+   font-family: "Raleway";
+   font-style: normal;
+   font-weight: normal;
+   src: url(Fuentes/Raleway/Raleway-Light.ttf);
+}
+
+
+@font-face{
+   font-family: "Cutive";
+   font-style: normal;
+   font-weight: normal;
+   src: url(Fuentes/Cutive_Mono/CutiveMono-Regular.ttf);
+}
+
+body, html {
+    height: 100%;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: black;
+}
+
+header{
+    background-color: black;
+    position: relative;
+    z-index: 999;
+
+}
+
+a{
+    font-family: "Tangerine";
+    text-decoration: none;
+    color: white;
+    font-size: 45px;
+}
+
+a:hover{
+    color: #b7b7b7;
+}
+
+/*a:active::after , a:active::before{
+    content: " - ";
+}
+*/
+nav a:nth-child(1) {
+    padding: 40px 0px 0px 30px;
+    float:left;
+    position: absolute;
+    left: 300px;
+    
+}
+
+nav a:nth-child(2) {
+    padding: 40px 0px 0px 30px;
+    float:left;
+    position: absolute;
+    left: 600px;
+}
+
+nav a:nth-child(3) {
+    padding: 40px 0px 0px 30px;
+    float:right;
+    position: absolute;
+    right: 600px;
+}
+
+nav a:nth-child(4) {
+    padding: 40px 0px 0px 30px;
+    float:right;
+    position: absolute;
+    right: 300px;
+}
+
+.Logo{
+    /*background-color: aqua;*/
+    background: url(imagenes/logo.png);
+    background-repeat:no-repeat;
+    background-size:100px;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0px;
+    right: 920px;
+    
+}
+
+.fondo{
+    background-image: url(imagenes/fondo.jpg);
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+}
+
+.seccion1 {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.foto1{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background-image: url(imagenes/foto1.png);
+    background-size: cover;
+    position: absolute;
+    top: 200px;
+    left: 330px;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+.foto1:hover{
+    width: 450px;
+    height: 450px;
+    top: 175px;
+    left:305px;
+}
+
+.texto1{
+    width: 700px;
+    height: 400px;
+    position: absolute;
+    right: 330px;
+    top:240px;
+    text-align: justify;
+}
+
+.seccion2{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.foto2{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background-image: url(imagenes/foto1.png);
+    background-size: cover;
+    position: absolute;
+    top: 200px;
+    right: 330px;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+.texto2{
+    width: 700px;
+    height: 400px;
+    position: absolute;
+    left: 330px;
+    top:240px;
+    text-align:justify;
+}
+
+.foto2:hover{
+    width: 450px;
+    height: 450px;
+    top: 175px;
+    right:305px;
+}
+
+.botonLinkFondo{
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    opacity: 0.5;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 20px;
+    right: 920px;
+    background-image: url(imagenes/flecha.png);
+    background-repeat:no-repeat;
+    background-position: center; 
+	background-size: 35px;
+    transition-property: opacity;
+    transition-duration: 0.5s;
+}
+
+
+.botonLink{
+    width: 50px;
+    height: 50px;
+    background-color: grey;
+    opacity: 0.2;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 50px;
+    right: 920px;
+    background-image: url(imagenes/flecha.png);
+    background-repeat:no-repeat;
+    background-position: center; 
+	background-size: 35px;
+    transition-property: opacity;
+    transition-duration: 0.5s;
+}
+
+a>div.botonLinkFondo:hover{
+    opacity: 0.7;
+}
+
+a>div.botonLink:hover{
+    opacity: 0.4;
+}
+
+a>div.botonLink:active::after, a>div.botonLink:active::before{
+    content: "";
+}
+
+.titulo{
+    color: white;
+    font-size: 100px;
+    position: absolute;
+    bottom: 300px;
+    left: 330px;
+    z-index: 999;
+    font-family: "Tangerine";
+}
+
+
+footer {
+    width: 100%;
+    height: 40%;
+    background-color: black;
+}
+
+.titulillo1{
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    color: white;
+    font-size: 30px;
+    font-family: 'Cutive';
+    font-weight: 100;
+}
+
+.separador{
+    height: 60px;
+}
+
+p {
+    color: white;
+    font-family: "Raleway";
+    font-weight: 100;
+}
+
+.titulillo2{
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    color: white;
+    font-size: 30px;
+    font-family: 'Cutive';
+    font-weight: 100;
+    right: 0px;
+}
+
+hr{
+   height: 30px; 
+   width:100%; 
+   background: url(imagenes/bigotes.png) center; 
+   background-color: black;
+   border : 0;
+   margin-top:0;
+   margin-bottom: 0;
+}
+
+.contacto{}
+
+.redesSociales{}
+
+.twitter{}
+
+.facebook{}
+
+.google{}
+
+.ancla{
+    position: absolute;
+    top: 0px;
+}
+
+.divMenuFotos{
+    width: 1200px;
+    height: 700px;
+    position: absolute;
+    background-color: gray;
+    top: 250px;
+    left: 360px;
+}
+
+div.divMenuFotos div:nth-child(1) {
+    width: 50%;
+    height: 58%;
+    background-color: yellow;
+    position: absolute;   
+}
+
+div.divMenuFotos div:nth-child(2) {
+    width: 50%;
+    height: 58%;
+    background-color: green;
+    position: absolute;
+    right: 0px;
+}
+
+div.divMenuFotos div:nth-child(3) {
+    width: 33%;
+    height: 42%;
+    background-color: blue;
+    position: absolute;
+    bottom: 0px;
+}
+
+div.divMenuFotos div:nth-child(4) {
+    width: 34%;
+    height: 42%;
+    background-color: violet;
+    position: absolute;
+    bottom: 0px;
+    left: 396px;
+}
+
+div.divMenuFotos div:nth-child(5) {
+    width: 33%;
+    height: 42%;
+    background-color: coral;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+h2.titulosPrincipales{
+    width: 670px;
+    height: 50px;
+    color: white;
+    position: absolute;
+    top: 150px;
+    left: 625px;
+    font-family: "Cutive";
+    font-size: 40px;
+}
+
+.separadorSecciones{
+    height: 100px;
+    background-color: black;
+}
