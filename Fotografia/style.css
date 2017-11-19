@@ -1,0 +1,776 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather+Sans');/*font-family: 'Merriweather Sans', sans-serif;*/
+@import url('https://fonts.googleapis.com/css?family=Cuprum|Rajdhani'); 
+/* 
+
+    font-family: 'Cuprum', sans-serif;
+
+    font-family: 'Rajdhani', sans-serif;
+
+*/
+@import url('https://fonts.googleapis.com/css?family=Cinzel'); /* font-family: 'Cinzel', serif; */
+
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.content{
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+
+header{
+    border:20px solid white;
+    width: 100%;
+    height: 13%;
+}
+
+header.index{
+    border:20px solid white;
+    width: 100%;
+    height: 100%;
+    background-image: url(Imagenes/header4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+
+section{
+    width: 100%;
+    height: 100%;
+}
+
+.sectionBio{
+    height: 85%;
+}
+
+.seccionFotos{
+    width: 125%;
+    height: 100%;
+}
+
+.contentSection1{
+    border:20px solid white;
+    border-right: 0px;
+    float: left;
+    width: 33.5%;
+    height: 100%;
+}
+
+.linkBoton{
+    text-decoration: none;
+    display: block;
+    width: 77.4325433%; /* 150 / 193.717*/
+    height: 46.5116279%;/* 40 / 86 */
+    line-height: 200%;
+    margin-left: 11.356773%; /* 22 / 193.717*/
+    color: #0094e9;
+    background-color: #e5e2e2;
+    transition-property: background-color, color, opacity;
+    transition-duration: 0.5s;
+}
+
+.linkBoton:hover{
+    background-color: #bdbdbd;
+    color:black;
+}
+
+.imageSection1{
+    border:20px solid white;
+    border-left: 0px;
+    float: right;
+    width: 66%;
+    height: 100%;
+    background-image: url(Imagenes/696320.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.logo{
+    width: 21.01944298%; /* 400px / 1903px*/
+    height: 20.59732234%; /* 200px / 971px*/
+    float: left;
+    margin-top: 17%;
+    margin-left: 6.5%;
+    background-image: url(Imagenes/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.logo > p {
+    width: 100%;
+    text-align: center;
+    color:#ffff86;
+    font-size: 2.60416666vw;
+    font-family: 'Cinzel', serif;
+}
+
+.vuelta{
+    transform: rotateX(90deg);
+}
+
+.blog{
+    width: 75%;
+    height: 75%;
+    border:20px solid white;
+    margin: 15% auto;
+}
+
+.contentBlog{
+    transition: border 1s;
+}
+
+.contentBlog:hover{
+    border:1px solid white;
+}
+
+.fotoBlog{
+    width: 100%;
+    height: 43.5888122%;/* 300px / 688.25px*/
+    background-color: black;
+}
+
+.foto1{
+    background-image: url(Imagenes/blog1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.foto2{
+    background-image: url(Imagenes/blog2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.foto3{
+    background-image: url(Imagenes/blog3.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.contentBlog{
+    float: left;
+    width: 33.33333%;
+    height: 100%;
+    border:10px solid white;
+}
+
+nav{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Rajdhani', sans-serif;
+} 
+
+nav > a {
+    color: black;
+    font-size: 1.5625vw;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    transition: color 0.5s;
+}
+
+nav > a:hover {
+    color: #909090;
+}
+
+span.navTitulo{
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    color:black;
+    font-size: 2.0833333vw;
+    font-family: 'Cinzel', serif;
+}
+
+nav.index{
+    width: 100%;
+    height: 9%;
+    text-align: inherit;
+}
+
+nav.index > a {
+    color: white;
+    font-size: 1.5625vw;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    transition: color 0.5s;
+}
+
+nav.index > a:hover {
+    color: #909090;
+} 
+
+div.gallery{
+    width: 100%;
+    height: 90%;
+}
+
+.photo1{
+    float: left;
+    border:20px solid white;
+    width: 50%;
+    height: 60%;
+    background-color: black;
+    background-image: url(Imagenes/galeria4.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: filter 1.5s;
+}
+
+.photo1:hover{
+    filter: sepia(75%);
+}
+
+.photo2{
+    float:right;
+    width: 50%;
+    height: 60%;
+}
+
+div.photo2 > div{
+    border:20px solid white;
+    background-color: black;
+    float: left;
+    width: 50%;
+    height: 100%;
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.fotos2 > div{
+    background-color: black;
+    float: left;
+    width: 100%;
+    height: 50%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.hov{
+    transition: filter 1.5s;
+} 
+
+.hov:hover{
+    filter: sepia(75%);
+}
+
+
+#foto1{
+    background-image: url(Imagenes/galeria2.jpg);
+    border-bottom:20px solid white;
+}
+
+#foto2{
+    background-image: url(Imagenes/galeria3.jpg);
+}
+
+#foto4{
+    background-image: url(Imagenes/galeria7.jpg);
+    transition: filter 1.5s;
+}
+
+#foto4:hover{
+    filter: sepia(75%);
+}
+
+.photo3{
+    float: left;
+    width: 100%;
+    height: 40%;
+}
+
+div.photo3 > div {
+    float: left;
+    border:20px solid white;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: black;
+    transition: filter 1.5s;
+    width: 33.3333333%;
+    height: 100%;
+}
+
+div.photo3 > div:hover{
+    filter: sepia(75%);
+}
+
+#foto5{
+    background-image: url(Imagenes/galeria1.jpg);
+}
+
+#foto6{
+    background-image: url(Imagenes/galeria5.jpg);
+}
+
+#foto7{
+    background-image: url(Imagenes/galeria6.jpg);
+}
+
+.TituloSeccion{
+    border-left: 20px solid white;
+    border-right: 20px solid white;
+    margin: 0 auto;
+    width: 100%;
+    height: 8%;
+    text-align: center;
+}
+
+div.TituloSeccion > p {
+    color: black;
+    font-size: 1.822916666vw;
+    font-family: 'Cinzel', serif;
+}
+
+footer{
+    border:20px solid white;
+    width: 100%;
+    height: 40%;
+}
+
+footer p{
+    font-size: 0.8333333vw;
+}
+
+footer > div {
+    width: 100%;
+    height: 70%;
+}
+
+.seccionfooter > div {
+    float: left;
+    width: 33.33333%;
+    height: 100%;
+    text-align: center;
+    color: black;
+}
+
+p > a {
+    color: grey;
+}
+
+.redesSociales{
+    height: 15%;
+}
+
+.copyrigth{
+    text-align: center;
+    height: 15%;
+    color: black;
+    font-size: 0.8333333vw;
+}
+
+.red{
+    float: left;
+    border-radius: 50%;
+    width: 25%;
+    height: 100%;
+    background-color: white;
+    transition:all 1s;
+}
+
+.red:hover{
+    background-color: #d0d0d0;
+}
+
+div.redesSociales > div {
+   margin: 0 auto;
+   width: 10.735373%; /* 1863 / 200 */ 
+   height: 100%;
+}
+
+hr { 
+    display: block;
+    margin-top: 0.75%;
+    margin-bottom:  0.75%;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 0.25%;
+    width: 100%;
+
+}
+
+.presentacion{
+    margin-top:50%;
+    width: 100%;
+    text-align: center;
+}
+
+.Pnew{
+    font-family: 'Cinzel', serif;
+    font-size: 2.604166666vw;
+}
+
+.Pblack{
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.5625vw;
+}
+
+.ContentEnlace {
+    margin: 0 auto; /* 385.5 / 637.5 */
+    width: 31.372549%; /* 200 / 637.5 */
+    text-align: center;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 1.041666666vw;
+}
+
+.botonBlog{
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    width: 25%;
+    height: 7%;
+    line-height: 275%;
+    margin-left: 37%; 
+    color: #0094e9;
+    background-color: #e5e2e2;
+    transition-property: background-color, color, opacity;
+    transition-duration: 0.5s;
+}
+
+.botonBlog:hover{
+    background-color: #bdbdbd;
+    color:black;
+}
+
+.Btitulo{
+    text-align: center;
+    width: 100%;
+    height: 10%;
+}
+
+.texto{
+    text-align: justify;
+    width: 100%;
+    height: 25%;
+}
+
+.Btitulo > p{
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 1.5625vw;
+}
+
+.texto > p {
+    font-size: 0.9375vw;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.fotoBio{
+    float: left;
+    border:20px solid white;
+    width: 50%;
+    height: 100%;
+}
+
+.Texto{
+    float: left;
+    border:20px solid white;
+    width: 40%;
+    height: 100%;
+    text-align: justify;
+}
+
+.Texto > div {
+    width:50%;
+    height: 100%;
+    float: left;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 0.83333333333vw;
+}
+
+.fotoBio > div {
+    width: 60%;
+    height: 80%;
+    background-image: url(Imagenes/bioFondo.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+    margin-top: 2%;
+    margin-left: 20%;
+    filter: grayscale(75%);
+    transition: filter 1s;
+}
+
+.fotoBio > div:hover{
+    filter: grayscale(25%);
+}
+
+/*http://larajade.com/about-clients/*/
+
+.instagram{
+    background-image: url(Imagenes/instagram.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.pinterest{
+    background-image: url(Imagenes/pinterest.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.facebook{
+    background-image: url(Imagenes/facebook.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.twitter{
+    background-image: url(Imagenes/twitter.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+@media only screen and (max-width: 1366px) {
+    .botonBlog{
+        width: 30%;
+        line-height: 200%;
+    }
+    
+    .fotoBio > div {
+        width: 75%;
+        height: 90%;
+        background-image: url(Imagenes/bioFondo.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: black;
+        margin-top: 2%;
+        margin-right: 5%;
+        filter: grayscale(75%);
+        transition: filter 1s;
+    }
+    
+    .Texto > div {
+        width: 100%;
+        height: 100%;
+        float: left;
+        font-family: 'Rajdhani', sans-serif;
+        font-size: 1.171903074vw;
+        margin-left: 2%;
+    }
+    .fotoBio{
+        float: left;
+        border:20px solid white;
+        width: 50%;
+        height: 100%;
+    }
+
+    .Texto{
+        float: left;
+        border:20px solid white;
+        width: 50%;
+        height: 100%;
+        text-align: justify;
+    }
+    
+    .ocultar{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    header.index{
+        border:0px solid white;
+        width: 100%;
+        height: 100%;
+        background-image: url();
+        background-color: black;
+    }
+    
+    nav.index{
+        height: 50%;
+        text-align: center;
+    }
+
+    nav.index > a {
+        display: block;
+        font-size: 30px;
+        padding-top: 6%;
+    }
+    
+    .logo{
+        width: 100%; /* 400px / 1903px*/
+        margin-left: 0%;
+    }
+    
+    .ocultarMovil{
+        display: none;
+    }
+    
+    .contentSection1{
+        border: 0px solid white;
+        width: 100%;
+    }
+    
+    .presentacion{
+        margin-top:50%;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .Pnew{
+        font-family: 'Cinzel', serif;
+        font-size: 30px;
+    }
+    
+    .Pblack{
+        font-family: 'Rajdhani', sans-serif;
+        font-size: 25px;
+    }
+    
+    .ContentEnlace {
+        margin: 0 auto; /* 385.5 / 637.5 */
+        width: 75%; /* 200 / 637.5 */
+        text-align: center;
+        font-family: 'Merriweather Sans', sans-serif;
+        font-size: 20px;
+    }
+    
+    
+    .blog{
+        width: 100%;
+        height: 90%;
+        border: 0px solid white;
+        margin: 15% auto;
+    }
+    
+    .contentBlog{
+        width: 100%;
+    }
+
+    .texto{
+        text-align: justify;
+        width: 100%;
+        height: 35%;
+    }
+    
+    .Btitulo > p{
+        font-family: 'Merriweather Sans', sans-serif;
+        font-size: 25px
+    }
+    
+    .texto > p {
+        font-size: 20px;
+        font-family: 'Rajdhani', sans-serif;
+    }
+    
+    footer p{
+        font-size: 7px;
+    }
+    
+    .copyrigth{
+        font-size: 7px;
+    }
+    div.redesSociales > div {
+       margin: 0 auto;
+       width: 30%; /* 1863 / 200 */ 
+       height: 100%;
+    }
+    
+    header{
+        border:0px solid white;
+        width: 100%;
+        height: 13%;
+    }
+    nav > a {
+        color: black;
+        font-size: 25px;
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+        transition: color 0.5s;
+    }
+    .TituloSeccion{
+        border-left: 0px solid white;
+        border-right: 0px solid white;
+    }
+
+    div.TituloSeccion > p {
+        border: 0px solid white;
+        font-size: 14px;
+    }
+    .photo1{
+        border: 0px solid white;
+        width: 100%;
+        background-size: cover;
+    }
+    .photo2{
+        border: 0px solid white;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+    }
+    
+    div.photo2 > div{
+        border: 0px solid white;
+        width: 100%;
+        background-size: cover;
+    }
+    
+    .photo3{
+        border: 0px solid white;
+        float: left;
+        width: 100%;
+        height: 100%;
+    }
+    
+    div.photo3 > div {
+        float: left;
+        border: 0px solid white;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: black;
+        transition: filter 1.5s;
+        width: 50%;
+        height: 100%;
+    }
+    
+    #foto1{
+        border-bottom: 0px solid white;
+    }
+    .copyrigth{
+        float: left;
+    }
+    .Texto > div {
+        width:100%;
+        height: 100%;
+        float: left;
+        font-family: 'Rajdhani', sans-serif;
+        font-size: 16px;
+    }
+    
+    .Texto{
+        float: left;
+        border:10px solid white;
+        width: 100%;
+        height: 100%;
+        text-align: justify;
+    }
+    
+}

@@ -1,0 +1,1269 @@
+@import url("resetCss.css");
+@import url('https://fonts.googleapis.com/css?family=Arapey|Muli');
+@font-face{
+   font-family: "Tangerine";
+   font-style: normal;
+   font-weight: normal;
+   src: url(Fuentes/Tangerine/Tangerine-Regular.ttf);
+}
+
+@font-face{
+   font-family: "Raleway";
+   font-style: normal;
+   font-weight: normal;
+   src: url(Fuentes/Raleway/Raleway-Light.ttf);
+}
+
+
+/*@font-face{
+   font-family: "Cutive";
+   font-style: normal;
+   font-weight: normal;
+   src: url(Fuentes/Arapey/Arapey-Regular.ttf);
+}*/
+
+
+
+@font-face{
+   font-family: "Crimson";
+   font-style: normal;
+   font-weight: normal;
+   src: url(Fuentes/Crimson/CrimsonText-Regular.ttf);
+}
+
+body, html {
+    height: 100%;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: black;
+}
+
+header{
+    background-color: black;
+    position: relative;
+    z-index: 999;
+
+}
+
+a{
+    font-family: "Tangerine";
+    text-decoration: none;
+    color: white;
+    font-size: 45px;
+}
+
+a:hover{
+    color: #b7b7b7;
+}
+
+/*a:active::after , a:active::before{
+    content: " - ";
+}
+*/
+nav a:nth-child(1) {
+    padding: 40px 0px 0px 30px;
+    float:left;
+    position: absolute;
+    left: 300px;
+    
+}
+
+nav a:nth-child(2) {
+    padding: 40px 0px 0px 30px;
+    float:left;
+    position: absolute;
+    left: 600px;
+}
+
+nav a:nth-child(3) {
+    padding: 40px 0px 0px 30px;
+    float:right;
+    position: absolute;
+    right: 700px;
+}
+
+nav a:nth-child(4) {
+    padding: 40px 0px 0px 30px;
+    float:right;
+    position: absolute;
+    right: 400px;
+}
+
+.Logo{
+    /*background-color: aqua;*/
+    background: url(imagenes/logo.png);
+    background-repeat:no-repeat;
+    background-size:100px;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0px;
+    right: 920px;
+    
+}
+
+.fondo{
+    background-image: url(imagenes/fondo.jpg);
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+}
+
+.seccion1 {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.foto1{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background-image: url(imagenes/foto1.png);
+    background-size: cover;
+    position: absolute;
+    top: 200px;
+    left: 330px;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+.foto1:hover{
+    width: 450px;
+    height: 450px;
+    top: 175px;
+    left:305px;
+}
+
+.texto1{
+    width: 700px;
+    height: 400px;
+    position: absolute;
+    right: 330px;
+    top:240px;
+    text-align: justify;
+}
+
+.seccion2{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.foto2{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background-image: url(imagenes/arman.jpg);
+    background-size: cover;
+    position: absolute;
+    top: 200px;
+    right: 330px;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+.texto2{
+    width: 700px;
+    height: 400px;
+    position: absolute;
+    left: 330px;
+    top:240px;
+    text-align:justify;
+}
+
+.foto2:hover{
+    width: 450px;
+    height: 450px;
+    top: 175px;
+    right:305px;
+}
+
+.botonLinkFondo{
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    opacity: 0.5;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 20px;
+    right: 920px;
+    background-image: url(imagenes/flecha.png);
+    background-repeat:no-repeat;
+    background-position: center; 
+	background-size: 35px;
+    transition-property: opacity;
+    transition-duration: 0.5s;
+}
+
+
+.botonLink{
+    width: 50px;
+    height: 50px;
+    background-color: grey;
+    opacity: 0.2;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 50px;
+    right: 920px;
+    background-image: url(imagenes/flecha.png);
+    background-repeat:no-repeat;
+    background-position: center; 
+	background-size: 35px;
+    transition-property: opacity;
+    transition-duration: 0.5s;
+}
+
+a>div.botonLinkFondo:hover{
+    animation: tamaño 1s infinite alternate-reverse;
+    opacity: 0.7;
+}
+
+a>div.botonLink:hover{
+    animation: tamaño 1s infinite alternate-reverse;
+    opacity: 0.4;
+}
+
+a>div.botonLink:active::after, a>div.botonLink:active::before{
+    content: "";
+}
+
+.titulo{
+    color: white;
+    font-size: 100px;
+    position: absolute;
+    bottom: 300px;
+    left: 330px;
+    z-index: 999;
+    font-family: "Tangerine";
+}
+
+
+footer {
+    position: relative;
+    width: 100%;
+    height: 40%;
+    background-color: black;
+}
+
+.titulillo1{
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    color: white;
+    font-size: 30px;
+    font-family: 'Cutive';
+    font-weight: 100;
+}
+
+.tituliloJefe{
+    position: absolute;
+    width: 500px;
+    height: 50px;
+    color: white;
+    font-size: 30px;
+    font-family: 'Cutive';
+    font-weight: 100;
+}
+
+.separador{
+    height: 60px;
+}
+
+p {
+    color: white;
+    font-family: "Raleway";
+    font-weight: 100;
+    line-height: normal;
+}
+
+.titulillo2{
+    position: absolute;
+    width: 165px;
+    height: 50px;
+    color: white;
+    font-size: 30px;
+    font-family: 'Cutive';
+    font-weight: 100;
+    right: 0px;
+    text-align: right;
+}
+
+hr{
+   height: 30px; 
+   width:100%; 
+   background: url(imagenes/bigotes.png) center; 
+   background-color: black;
+   border : 0;
+   margin-top:0;
+   margin-bottom: 0;
+}
+
+.contacto{
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    left: 330px;
+    top: 100px;
+}
+
+.redesSociales{
+    position: absolute;
+    top: 100px;
+    right: 330px;
+    display: block;
+    height: 125px;
+    width: 200px;
+}
+
+.twitter{
+    position: absolute;
+    background-image: url(RedesSociales/twSprite.png);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+.twitter:hover{
+    background-position: -50px;
+}
+
+.facebook{
+    position: absolute;
+    right: 75px;
+    background-image: url(RedesSociales/faceSprite.png);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+.facebook:hover{
+    background-position: -50px;
+}
+
+.google{
+    position: absolute;
+    right: 0px;
+    background-image: url(RedesSociales/googleSprite.png);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+.google:hover{
+    background-position: -50px;
+}
+
+.instagram{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    background-image: url(RedesSociales/instagramSprite.png);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+.instagram:hover{
+    background-position: -50px;
+}
+
+.linkdn{
+    position: absolute;
+    right: 75px;
+    bottom: 0px;
+    background-image: url(RedesSociales/linkdnSprite.png);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+.linkdn:hover{
+    background-position: -50px;
+}
+
+.pinterest{
+    position: absolute;
+    background-image: url(RedesSociales/pinterestSprite.png);
+    width: 50px;
+    bottom: 0px;
+    height: 50px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+.pinterest:hover{
+    background-position: -50px;
+}
+
+.navegacion{
+    position: absolute;
+    width: 200px;
+    height: 150px;
+    top: 100px;
+    left: 925px;
+    font-family: Muli;
+}
+
+div.navegacion h1:nth-child(1){
+    color: white;
+}
+
+div.navegacion p:nth-child(2){
+    position: absolute;
+    top:20px;
+}
+
+div.navegacion p:nth-child(3){
+    position: absolute;
+    top:40px;
+}
+
+div.navegacion p:nth-child(4){
+    position: absolute;
+    top:60px;
+}
+
+div.navegacion p:nth-child(5){
+    position: absolute;
+    top:80px;
+}
+a.footerNav{
+    font-family: Crimson;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.ancla{
+    position: absolute;
+    top: 0px;
+}
+
+.divMenuFotos{
+    width: 1200px;
+    height: 700px;
+    position: absolute;
+    background-color: gray;
+    top: 250px;
+    left: 360px;
+}
+
+div.divMenuFotos div:nth-child(1) {
+    width: 50%;
+    height: 58%;
+    background-color: #919191;
+    position: absolute;
+    background-image: url(imagenes/comida/pizza3.jpg);
+    background-size: cover;
+}
+
+div.divMenuFotos div:nth-child(2) {
+    width: 50%;
+    height: 58%;
+    background-color: #919191;
+    position: absolute;
+    right: 0px;
+    background-image: url(imagenes/comida/macarrones.jpg);
+    background-size: cover;
+}
+
+div.divMenuFotos div:nth-child(3) {
+    width: 33%;
+    height: 42%;
+    background-color: #919191;
+    position: absolute;
+    bottom: 0px;
+    background-image: url(imagenes/comida/pasta.jpg);
+    background-size: cover;
+}
+
+div.divMenuFotos div:nth-child(4) {
+    width: 34%;
+    height: 42%;
+    background-color: #919191;
+    position: absolute;
+    bottom: 0px;
+    left: 396px;
+    background-image: url(imagenes/comida/postr1.jpg);
+    background-size: cover;
+}
+
+div.divMenuFotos div:nth-child(5) {
+    width: 33%;
+    height: 42%;
+    background-color: #919191;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    background-image: url(imagenes/comida/ensalada.jpg);
+    background-size: cover;
+}
+
+div.divMenuFotos div:nth-child(6) {
+    width: 50%;
+    height: 58%;
+    background-color: #919191;
+    position: absolute;
+    opacity: 0;
+}
+
+div.divMenuFotos div:nth-child(7) {
+    width: 50%;
+    height: 58%;
+    background-color: #919191;
+    position: absolute;
+    right: 0px;
+    opacity: 0;
+}
+
+div.divMenuFotos div:nth-child(8) {
+    width: 33%;
+    height: 42%;
+    background-color: #919191;
+    position: absolute;
+    bottom: 0px;
+    opacity: 0;
+}
+
+div.divMenuFotos div:nth-child(9) {
+    width: 34%;
+    height: 42%;
+    background-color: #919191;
+    position: absolute;
+    bottom: 0px;
+    left: 396px;
+    opacity: 0;
+}
+
+div.divMenuFotos div:nth-child(10) {
+    width: 33%;
+    height: 42%;
+    background-color: #919191;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    opacity: 0;
+}
+
+div.divMenuFotos div:nth-child(n + 1){
+    transition-property: all;
+    transition-duration: 0.7s;
+}
+
+div.divMenuFotos div:nth-child(n + 1):hover{
+    opacity: 0.8;
+}
+
+.tituloMejoresPlatos{
+    width: 450px;
+    height: 50px;
+    color: white;
+    position: absolute;
+    top: 150px;
+    left: 745px;
+    font-family: "Arapey";
+    font-size: 40px;
+}
+
+.tituloListaDePrecios{
+    width: 460px;
+    height: 50px;
+    color: white;
+    position: absolute;
+    top: 150px;
+    left: 725px;
+    font-family: "Arapey";
+    font-size: 40px;
+}
+
+.tituloChefsSecundarios{
+    width: 310px;
+    height: 50px;
+    color: white;
+    position: absolute;
+    top: 150px;
+    left: 800px;
+    font-family: "Arapey";
+    font-size: 40px;
+}
+
+.separadorSecciones{
+    height: 100px;
+    background-color: black;
+}
+
+.separadorSeccionesFooter{
+    height: 180px;
+    background-color: black;
+}
+.descripcion{
+    margin: 0,auto;
+    height: 100%;
+    position: relative;
+}
+
+.tituloComidaGrande{
+    position: absolute;
+    font-size: 40px;
+    font-family:"Raleway";
+    width: 100%;
+    /*left: 150px;*/
+    top: 100px;
+    text-align: center;
+    color: rgba(0,0,0,1);
+}
+
+.descripcionComidaGrande{
+    position: absolute;
+    top:175px;
+    width: 70%;
+    left: 90px;
+    font-size: 25px;
+    text-align: justify;
+    color: rgba(255,255,255,1);
+}
+
+.tituloComidaPequeno{
+    position: absolute;
+    font-size: 30px;
+    font-family:"Raleway";
+    width: 100%;
+    /*left: 150px;*/
+    top: 70px;
+    color: black;
+    text-align: center;
+}
+
+.descripcionComidaPequeno{
+    position: absolute;
+    top:130px;
+    width: 70%;
+    left: 60px;
+    font-size: 25px;
+    text-align: justify;
+}
+
+.listaDePrecios{
+    width: 1500px;
+    height: 725px;
+    position: absolute;
+    top: 250px;
+    left: 350px;
+}
+
+.precios1{
+    position: relative;
+    float: left;
+    width: 60%;
+    height: 100%;
+}
+
+.precios2{
+    width: 40%;
+    height: 100%;
+    position: relative;
+    float: right;
+}
+
+p.tituloMenu{
+    font-family: 'Tangerine';
+    font-size: 60px;
+}
+
+p.subTituloMenu{
+    font-size: 30px;
+    font-family: 'Crimson';
+}
+
+p.subsubTituloMenu{
+    font-size: 20px;
+    font-family: 'Crimson';
+}
+
+.subDiv{
+    background-color: aqua;
+    width: 100%;
+}
+
+.subDivMenuIn{
+    background-color: aqua;
+    width: 100%;
+
+}
+
+div.subDivMenuIn div:nth-child(1){
+    width: 100%;
+    height: 150px;
+    float: left;
+}
+
+div.subDiv div:nth-child(1){
+    width: 50%;
+    height: 150px;
+    float: left;
+}
+
+
+
+div.subDiv div:nth-child(2){
+    width: 50%;
+    height: 150px;
+    float: right;
+    
+}
+
+div.subDiv1 div:nth-child(1){
+    width: 50%;
+    height: 250px;
+    float: left;
+}
+
+div.subDiv1 div:nth-child(2){
+    width: 50%;
+    height: 250px;
+    float: left;
+    
+}
+
+.subDiv1In{
+    background-color: aqua;
+    width: 100%;
+}
+
+div.subDiv1In div:nth-child(1){
+    width: 100%;
+    height: 250px;
+    float: left;
+    
+}
+
+div.contacto h1:nth-child(1){
+    position: absolute;
+    color: white;
+    font-family: Muli;
+}
+
+div.contacto div:nth-child(2){
+    width: 18px;
+    height: 18px;
+    background-image: url(imagenes/tlfnBlanco.png);
+    background-size: cover;
+    position: absolute;
+    top: 30px;
+}
+
+div.contacto p:nth-child(3){
+    position: absolute;
+    left: 25px;
+    top: 28px;
+}
+
+div.contacto div:nth-child(4){
+    width: 18px;
+    height: 18px;
+    background-image: url(imagenes/whatsappBlanco.png);
+    background-size: cover;
+    position: absolute;
+    top: 50px;
+}
+
+div.contacto p:nth-child(5){
+    position: absolute;
+    left: 25px;
+    top: 50px;
+}
+
+div.contacto div:nth-child(6){
+    width: 18px;
+    height: 18px;
+    background-image: url(imagenes/emailBlanco.png);
+    background-size: cover;
+    position: absolute;
+    top: 70px;
+}
+
+div.contacto p:nth-child(7){
+    position: absolute;
+    left: 25px;
+    top: 70px;
+}
+
+div.contacto div:nth-child(8){
+    width: 20px;
+    height: 20px;
+    background-image: url(imagenes/direccion.png);
+    background-size: cover;
+    position: absolute;
+    top: 90px;
+}
+
+div.contacto p:nth-child(9){
+    position: absolute;
+    left: 25px;
+    top: 90px;
+}
+
+.formulario{
+    position: absolute;
+    background-color: white;
+    width: 40%;
+    height: 100%;
+    top: 200px;
+    left:550px;
+}
+
+hr.separadorMenu{
+    border: 1px solid white; 
+    border-radius: 300px ; 
+    height: 0px;
+    width: 100px;
+    float: left;
+    position: absolute;
+}
+
+.tituloChefs{
+    width: 416px;
+    height: 50px;
+    color: white;
+    position: absolute;
+    top: 150px;
+    left: 744px;
+    font-family: "Arapey";
+    font-size: 40px;
+}
+
+.fotoChef{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background-image: url(imagenes/chef1.jpg);
+    background-size: cover;
+    position: absolute;
+    top: 250px;
+    left: 330px;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+.fotoChef:hover{
+    width: 450px;
+    height: 450px;
+    top: 225px;
+    left:305px;
+}
+
+.descripcionChef{
+    width: 700px;
+    height: 400px;
+    position: absolute;
+    right: 330px;
+    top:290px;
+    text-align: justify;
+}
+
+div.chefs {
+    width: 1200px;
+    height: 350px;
+    position: absolute;
+    background-color: black;
+    top: 250px;
+    left: 360px;
+}
+
+div.chefs div:nth-child(1){
+    width: 32%;
+    height: 100%;
+    background-color: #919191;
+    position: absolute;
+    background-image: url(imagenes/chef2.jpg);
+    background-size: cover;
+}
+
+div.chefs div:nth-child(2){
+    width: 32%;
+    height: 100%;
+    background-color: #919191;
+    position: absolute;
+    bottom: 0px;
+    left: 408px;
+    background-image: url(imagenes/chef3.jpg);
+    background-size: cover;
+}
+
+div.chefs div:nth-child(3){
+    width: 32%;
+    height: 100%;
+    background-color: #919191;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    background-image: url(imagenes/chef4.jpg);
+    background-size: cover;
+}
+
+div.chefs div:nth-child(4){
+    width: 32%;
+    height: 100%;
+    background-color: #919191;
+    position: absolute;
+    opacity: 0;
+}
+
+div.chefs div:nth-child(5){
+    width: 32%;
+    height: 100%;
+    background-color: #919191;
+    position: absolute;
+    right: 408px;
+    opacity: 0;
+}
+
+div.chefs div:nth-child(6){
+    width: 32%;
+    height: 100%;
+    background-color: #919191;
+    position: absolute;
+    right: 0px;
+    opacity: 0;
+}
+
+div.chefs div:nth-child(n + 1){
+    transition-property: all;
+    transition-duration: 0.7s;
+}
+
+div.chefs div:nth-child(n + 1):hover{
+    opacity: 0.8;
+}
+
+input {
+	font-size: 15px;
+	margin: 0;
+	padding: 0;
+}
+
+.calendario{
+    width: 500px;
+}
+
+.reserva {
+	position: absolute;
+    top: 250px;
+    left: 400px;
+	width: 1100px;
+}
+
+.formulario{
+    position: absolute;
+    width: 500px;
+    height: 200px;
+    background-color: black;
+    top:15px;
+}
+
+.reserva span.imgUser {
+	display: block;
+	height: 48px;
+	line-height: 48px;
+	position: absolute;
+	text-align: center;
+	width: 36px;
+    background-image: url(imagenes/user.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.reserva span.imgMail {
+	display: block;
+	height: 48px;
+	line-height: 48px;
+	position: absolute;
+	text-align: center;
+	width: 36px;
+    background-image: url(imagenes/email.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.reserva span.imgNum {
+	display: block;
+	height: 48px;
+	line-height: 48px;
+	position: absolute;
+	text-align: center;
+	width: 36px;
+    background-image: url(imagenes/personas.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.reserva span.imgHora{
+    display: block;
+	height: 48px;
+	line-height: 48px;
+	position: absolute;
+	text-align: center;
+	width: 36px;
+    background-image: url(imagenes/soon.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.reserva input {
+	border: none;
+	height: 48px;
+	outline: none;
+}
+
+.reserva input[type="text"] {
+	background-color: #e0e0e0;
+	border-top: 2px solid black;
+	border-right: 1px solid #000;
+	border-left: 1px solid #000;
+	color: black;
+	padding-left: 36px;
+	width: 464px;
+}
+
+.reserva input[type="time"] {
+	background-color: #e0e0e0;
+	border-top: 2px solid black;
+	border-right: 1px solid #000;
+	border-left: 1px solid #000;
+	color: black;
+	padding-left: 36px;
+	width: 464px;
+}
+
+.reserva input[type="password"] {
+	background-color: #e0e0e0;
+	border-top: 2px solid black;
+	border-right: 1px solid #000;
+	border-bottom: 2px solid black;
+	border-left: 1px solid #000;
+	color: #363636;
+	margin-bottom: 20px;
+	padding-left: 36px;
+	width: 464px;
+}
+
+.separadorForm{
+    height: 20px;
+}
+
+.reserva input[type="submit"] {
+	background-color: black;
+	color: white;
+	font-weight: bold;
+	line-height: 48px;
+	text-align: center;
+	text-transform: uppercase;
+	width: 240px;
+}
+
+.reserva input[type="submit"]:hover {
+	color:grey;
+}
+
+.reserva input[type="button"] {
+	background-color: black;
+	color: #fff;
+	font-weight: bold;
+	line-height: 48px;
+	text-align: center;
+	text-transform: uppercase;
+	width: 240px;
+}
+
+.reserva input[type="button"]:hover {
+	color:grey;
+}
+
+/********************************************************/
+
+ul {list-style-type: none;}
+body {font-family: Verdana, sans-serif;}
+
+/* Month header */
+.month {
+    padding: 70px 0px;
+    width: 100%;
+    background: #bfbfbf;
+    text-align: center;
+}
+
+/* Month list */
+.month ul {
+    margin: 0;
+    padding: 0;
+}
+
+.month ul li {
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+/* Previous button inside month header */
+.month .prev {
+    float: left;
+}
+
+/* Next button */
+.month .next {
+    float: right;
+}
+
+/* Weekdays (Mon-Sun) */
+.weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color:black;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 13%;
+    color: white;
+    text-align: center;
+}
+
+/* Days (1-31) */
+.days {
+    padding: 10px 0;
+    background: #eee;
+    margin: 0;
+}
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size:12px;
+    color:black;
+}
+
+.days li:hover{
+    background: #777;
+    color: white !important;
+}
+.ano{
+    font-size: 18px;
+}
+
+.tituloReservas{
+    width: 295px;
+    height: 50px;
+    color: white;
+    position: absolute;
+    top: 150px;
+    left: 792.5px;
+    font-family: "Arapey";
+    font-size: 40px;
+}
+
+.nombresChefs{
+    position:absolute;
+    width:1200px;
+    height: 50px;
+    top:600px;
+    left:360px;
+}
+
+div.nombresChefs p:nth-child(1){
+    position: absolute;
+    top:10px;
+    left: 0px;
+    width: 32%;
+    font-size: 20px;
+    text-align: center;
+}
+
+div.nombresChefs p:nth-child(2){
+    position: absolute;
+    width: 32%;
+    top:10px;
+    left: 408px;
+    font-size: 20px;
+    text-align: center;
+}
+
+div.nombresChefs p:nth-child(3){
+    position: absolute;
+    top:10px;
+    right: 0px;
+    width: 32%;
+    font-size: 20px;
+    text-align: center;
+}
+
+.copyrigth{
+    position: absolute;
+    width: 100%;
+    color: white;
+    font-family: Raleway;
+    text-align: center;
+    bottom:25px;
+}
+
+@keyframes giro{
+    from{
+        transform: rotateZ(0deg);
+    }
+    
+    25%{
+        transform: rotateZ(-45deg);
+    }
+    
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes tamaño{
+    from{
+        transform:scale(1.2);
+    }
+    
+    to{
+        transform:scale(1);
+    }
+}
