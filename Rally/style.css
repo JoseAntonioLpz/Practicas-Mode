@@ -1,0 +1,1621 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css?family=Asap:400,400i,500,500i,600,600i,700,700i|Domine:400,700|Khula:300,400,600,700,800');
+/*
+    font-family: 'Asap', sans-serif;
+
+    font-family: 'Khula', sans-serif;
+
+    font-family: 'Domine', serif;
+
+*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.container{
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+
+header{
+    width: 100%;
+    height: 10%;
+    background-color: #6c6c6c;
+}
+
+nav{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul{
+    list-style: none;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    flex: 1;
+}
+
+nav ul li {
+    font-size: 24px;
+    font-family: 'Asap', sans-serif;
+    text-decoration: none;
+    padding: 0.8em;
+    
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.2s linear;
+}
+
+nav ul li a:hover{
+    color: #ff8a01;
+}
+
+.logo{
+    background-image: url(Imagenes/dirt-rally-badge-02-ps4-eu-10feb16.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: contain;
+    height: 100%;
+    flex: 1;
+}
+
+.movileResolutionHeader{
+    display: none;        
+}
+
+.fotoHeader{
+    width: 100%;
+    height: 400px;
+    background-image: url(Imagenes/WildByNature_c3.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+section{
+    width: 100%;
+    height: 75%;
+}
+
+.Videosnegro{
+    background-color: black;
+    display: flex;
+}
+
+.Videosnegro > div{
+    flex: 1 1 50%;
+    margin: 4%;
+}
+
+.noticias{
+    display: flex;
+}
+
+.videos{
+    display: flex;
+    flex-wrap:wrap;
+}
+
+.videos > div{
+    flex: 1 0 45%;
+    height: 33%;
+    background-color: azure;
+    margin: 0.5%;
+}
+
+.noticias > div{
+    min-width: 45%;
+    min-height: 100%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.headNoticias{
+    box-shadow: 0 4px 8px 0 #6a6a6a;
+    background-color: #cccccc;
+    border-bottom:2px solid #ff8a01;
+    height: 10%;
+    width: 90%;
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+}
+
+.headRedes{
+    box-shadow: 0 4px 8px 0 #6a6a6a;
+    background-color: white;
+    border-bottom:2px solid #ff8a01;
+    height: 10%;
+    width: 90%;
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+}
+
+.twitter{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid black;
+    margin-left: 1em;
+    background-image: url(Imagenes/twitter.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.facebook{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid black;
+    margin-left: 1em;
+    background-image: url(Imagenes/facebook.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.instagram{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid black;
+    margin-left: 1em;
+    background-image: url(Imagenes/instagram.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.redSeleccionada{
+    background-color: #cccccc;
+}
+
+.bodyNoticias{
+    box-shadow: 0 4px 8px 0 #6a6a6a;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    background-color: #cccccc;
+    height: 80%;
+    width: 90%;
+    margin-bottom: auto;
+    padding: 1em;
+}
+
+.bodyRedes{
+    font-family: 'Asap', sans-serif;
+    box-shadow: 0 4px 8px 0 #6a6a6a;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    background-color: white;
+    height: 80%;
+    width: 90%;
+    margin-bottom: auto;
+    padding: 1em;
+}
+
+.enlaceTweet{
+    color: #ff8a01;
+}
+
+.tweets{
+    display: flex;
+    flex-wrap:wrap;
+    width: 100%;
+    height: 100%;
+}
+
+.hastag{
+    flex:1 0 100%;
+    font-size: 2em;
+}
+
+.tweet{
+    flex: 1 0 100%;
+    height: 25%;
+    box-shadow: 0 4px 8px 0 #6a6a6a;
+    margin-top: 3%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.headerTweet{
+    flex:1 0 100%;
+    height: 15%;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+}
+
+.headerTweet  p {
+    padding-right: 20px;
+}
+
+.bodyTweet{
+    flex:1 0 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+}
+
+.imgTweet{
+    flex:1 0 20%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.img-responsive{
+     object-fit: contain;
+     border-radius: 50%;
+     width: 90px;
+     height: 90px;
+}
+
+.cuerpoTweet{
+    flex:1 0 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerTweet{
+    flex:1 0 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: row;
+}
+
+.rtButton{
+    flex: 1;
+    background-image: url(Imagenes/rt.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.favButton{
+    flex: 1;
+    background-image: url(Imagenes/fav.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.headNoticias ul{
+    list-style: none;
+    padding: 0.2em;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    flex: 1;
+}
+
+.headNoticias ul li {
+    font-size: 20px;
+    font-family: 'Asap', sans-serif;
+    text-decoration: none;
+    padding-left: 1em;
+    cursor: pointer;
+}
+
+.select{
+    color: #ff8a01;
+}
+
+.oculto{
+    display: none;
+}
+
+.fotoNoticia1{
+    height: 60%;
+    width: 60%;
+    background-image: url(Imagenes/20170062359AL_TANAK.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fotoNoticia2{
+    height: 60%;
+    width: 60%;
+    background-image: url(Imagenes/noticia2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fotoNoticia3{
+    height: 60%;
+    width: 60%;
+    background-image: url(Imagenes/noticia3.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#titulo{
+    font-size: 2.35vw;
+    text-align: justify;
+    padding-left: 0.5em;
+    width: 35%;
+    height: 65%;
+}
+
+#texto {
+    font-size: 1.2vw;
+    text-align: justify;
+    width: 100%;
+}
+
+footer{
+    display: flex;
+    align-items:center;
+    justify-content:space-evenly;
+    width: 100%;
+    height: 35%;
+    flex-wrap:wrap;
+}
+
+.copyright{
+    width: 100%;
+    display: flex;
+    align-items:center;
+    font-family: 'Asap', sans-serif;
+    justify-content:center;
+}
+
+img.responsive{
+    height: 100px;
+    width: 200px;
+    object-fit: contain;
+}
+
+.videos > div{
+    cursor: pointer;
+    position: relative;
+}
+
+.videos > div > div {
+    position: absolute;
+    width:60px;
+    height: 60px;
+    background-image: url(Imagenes/media.svg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.videos > div > div:hover{
+    animation: youtube 0.5s normal;
+}
+
+#video1{
+    background-image: url(Imagenes/rally1.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#video2{
+    background-image: url(Imagenes/rally2.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat; 
+}
+
+#video3{
+    background-image: url(Imagenes/rally3.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#video4{
+    background-image: url(Imagenes/rally4.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#video5{
+    background-image: url(Imagenes/rally5.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#video6{
+    background-image: url(Imagenes/rally6.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.csSection1{
+    height: 90%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.csTitulo1{
+    width:100%;
+    height: 5%;
+    text-align: center;
+    font-size: 1.8em;
+    font-family: 'Khula', sans-serif;
+}
+
+.csSection1 > div {
+    flex:1 0 33%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50%;
+    display: flex;
+    align-items:center;
+}
+
+.csSection1 p {
+    flex:1 0 100%;
+    text-align: center;
+    font-size: 2vw;
+    font-family: 'Khula', sans-serif;
+}
+
+#foto1{
+   background-image: url(Imagenes/rally7.jpg);
+   align-items:center;
+   flex-direction:column;
+   position:relative;
+}
+#foto1:before {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    width: 30px;
+    height: 30px;
+    transform: rotate(45deg);
+    background: white;
+}
+
+#foto2{
+    background-image: url(Imagenes/rally8.jpg);
+    align-items:center;
+    flex-direction:column;
+    position:relative;
+}
+
+#foto2:before {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    width: 30px;
+    height: 30px;
+    transform: rotate(45deg);
+    background: white;
+}
+
+#foto3{
+    background-image: url(Imagenes/rally9.jpg);
+    align-items:center;
+    flex-direction:column;
+    position:relative;
+}
+
+#foto3:before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    width: 30px;
+    height: 30px;
+    transform: rotate(45deg);
+    background: white;
+}
+
+.separador{
+    height: 10%;
+}
+
+hr{ 
+  width:50%;
+}
+
+
+.csSection2{
+    display: flex;
+    padding: 10px 10px 10px 10px;
+}
+
+.csSection2 > div {
+    flex: 1 0 33%;
+    height: 100%;
+    padding: 10px 10px 10px 10px;
+    margin: 5px 5px 5px 5px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction:column;
+}
+
+.fotoAnuncio {
+    flex: 1 0 50%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#fotoTicket1{
+    background-image: url(Imagenes/rally10.jpg);
+    background-position: center bottom;
+}
+
+#fotoTicket2{
+    background-image: url(Imagenes/rally11.jpg);
+    background-position: center bottom;
+}
+
+#fotoTicket3{
+    background-image: url(Imagenes/rally12.jpg);
+}
+
+
+.titleTicket{
+    flex: 1 0 20%;
+    font-size: 2.5vw;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    font-family: 'Khula', sans-serif;
+}
+
+.cuerpoTicket{
+    flex: 1 0 20%;
+    font-size: 1.8vw;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    font-family: 'Khula', sans-serif;
+}
+
+.contenedorBoton{
+    flex: 1 0 10%;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.botonTicket{
+    display: block;
+    width: 120px;
+    height: 50px;
+    background-color: #6c6c6c;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2vw;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    font-family: 'Asap', sans-serif;
+}
+
+hr.ticket{
+    width: 100%;
+}
+
+/*.enlaceFace{
+    color:blue;
+}*/
+
+.postFace{
+    padding: 5px 5px 5px 5px; 
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-wrap:wrap;
+    
+}
+
+.headFace{
+    flex: 1 0 100%;
+    height: 20%;
+    display: flex;
+}
+
+.imgFace{
+    flex: 1 0 30%;
+    height: 100%;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.img-face{
+    object-fit: contain;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+}
+
+.infoFace{
+    flex: 1 0 70%;
+    height: 100%;
+    display: flex;
+    align-items:flex-start;
+    justify-content:center;
+    flex-direction:column;
+}
+
+.bodyFace{
+    flex: 1 0 100%;
+    height: 70%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#face2{
+    background-image: url('Imagenes/fotoface2.jpg');
+}
+
+#face1{
+    background-image: url('Imagenes/facebookfoto1.jpg');
+}
+
+.footerFace{
+    flex: 1 0 100%;
+    height: 10%;
+    display: flex;
+}
+
+.mgFace{
+    flex: 1;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.mgFace::before{
+    margin-top: -3px;
+    content: "";
+    width: 18px;
+    height: 18px;
+    background-image: url('Imagenes/megusta.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-right: 10px;
+}
+
+.commentFace::before{
+    content: "";
+    width: 18px;
+    height: 18px;
+    background-image: url('Imagenes/comment.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-right: 10px;
+}
+
+.compartirFace::before{
+    content: "";
+    width: 18px;
+    height: 18px;
+    background-image: url('Imagenes/share.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-right: 10px;
+}
+
+.commentFace{
+    flex: 1;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.compartirFace{
+    flex: 1;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.fotoInsta{
+    flex: 1 0 50%;
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px 5px 5px 5px;
+}
+
+.foto-insta{
+    background-color: white;
+    flex: 1 0 100%;
+    height: 90%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.footerInsta{
+    flex: 1 0 100%;
+    height: 10%;
+    display: flex;
+    justify-content:center;
+    align-items:flex-end;
+}
+
+.mgInsta{
+    align-items:center;
+    justify-content:center;
+    margin-right: 30px;
+    position: relative;
+}
+
+.mgInsta::before{
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('Imagenes/corazon.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: -20px;
+    bottom: 0.1px;
+}
+
+.commentInsta{
+    align-items:center;
+    justify-content:center;
+    position: relative;
+}
+
+.commentInsta::before{
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-image: url('Imagenes/comment.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: -20px;
+}
+
+#insta1{
+    background-image: url('Imagenes/insta1.jpg');
+}
+
+#insta2{
+    background-image: url('Imagenes/insta2.jpg');
+}
+
+#insta3{
+    background-image: url('Imagenes/insta3.jpg');
+}
+
+#insta4{
+    background-image: url('Imagenes/insta4.jpg');
+}
+
+.hallSection1{
+    width: 100%;
+    height: 150%;
+}
+
+.hallSection1 > p{
+    width: 100%;
+    height: 10%;
+    font-size: 2em;
+    display: flex;
+    justify-content:center;
+    align-items:center; 
+    font-family: 'Khula', sans-serif;
+}
+
+.hallSection1 > div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap:wrap;
+}
+
+.hallSection1 > div > div{
+    flex: 1 0 50%;
+    /*height: 90%;*/
+    display: flex;
+    flex-wrap:wrap;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.hallSection1 > div > div > div{
+    flex: 1 0 50%;
+}
+
+#last1{
+    background-image: url('Imagenes/winner1.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    position: relative;
+}
+
+#last2{
+    background-image: url('Imagenes/winner2.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+
+#last3{
+    background-image: url('Imagenes/winner3.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    position: relative;
+}
+
+#last1:before {
+    content: "";
+    position: absolute;
+    bottom: 45px;
+    right: -15px;
+    width: 30px;
+    height: 30px;
+    transform: rotate(45deg);
+    background: white;
+}
+
+#last2:before {
+    content: "";
+    position: absolute;
+    bottom: 45px;
+    left: -15px;
+    width: 30px;
+    height: 30px;
+    transform: rotate(45deg);
+    background: white;
+}
+
+#last3:before {
+    content: "";
+    position: absolute;
+    bottom: 45px;
+    right: -15px;
+    width: 30px;
+    height: 30px;
+    transform: rotate(45deg);
+    background: white;
+}
+
+.francia{
+    width: 75px;
+    height: 50px;
+    background-image: url(Imagenes/francia.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+.finlandia{
+    width: 75px;
+    height: 50px;
+    background-image: url(Imagenes/finlandia.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+.izquierda{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.derecha{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.bio{
+    width: 100%;
+    flex-wrap:wrap;
+    display: flex;
+}
+
+.bio > p {
+    flex: 1 0 100%;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    font-size:1.5em;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+p.bioTitulo{
+    font-size:2em;
+    padding-left: 0px;
+    padding-right: 0px;
+    color:#ff8a01;
+}
+
+.bioButton{
+    flex: 1 0 100%;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.bioButton > a {
+    display: block;
+    width: 120px;
+    height: 50px;
+    background-color: #6c6c6c;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2vw;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    font-family: 'Asap', sans-serif;
+}
+/************************/
+.hallSection2{
+    width: 100%;
+    height: 35%;
+    background-color: black;
+}
+
+.titBio {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    font-family: 'Khula', sans-serif;
+}
+
+.hallSection2 > div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap:wrap;
+}
+
+.hallSection2 > div > div{
+    height: 100%;
+    flex: 1 0 25%;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.img-pilots{
+    object-fit: contain;
+    flex: 1 0 100%;
+    height: 80%;
+}
+
+.namePilots{
+    flex: 1 0 100%;
+    height: 20;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    color:#ff8a01;
+    font-size: 1.5em;
+    font-family: 'Asap', sans-serif;
+}
+
+.bio{
+    font-family:'Asap', sans-serif;
+}
+
+.headNoticias ul li{
+    transition: color 0.2s linear;
+}
+
+.headNoticias ul li:hover {
+    color:#ff8a01;
+}
+
+.headRedes > div{
+    transition: background-color 0.2s linear;
+}
+
+.headRedes > div:hover {
+    background-color: #cccccc;
+}
+
+.bioButton a{
+    transition: background-color 0.2s linear;
+}
+
+.bioButton a:hover {
+    background-color: #ff8a01;
+}
+
+.contenedorBoton a {
+    transition: background-color 0.2s linear;
+}
+
+.contenedorBoton a:hover {
+    background-color: #ff8a01;
+}
+
+/*.finland::before{
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    background-image: url(Imagenes/finlandia.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    
+}
+
+.alemania::before{
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    background-image: url(Imagenes/alemania.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+.italia::before{
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    background-image: url(Imagenes/italia.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+.espana::before{
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    background-image: url(Imagenes/espana.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}*/
+
+.finland{
+    position: relative;
+}
+
+.alemania{
+    position: relative;
+}
+
+.italia{
+    position: relative;
+}
+
+.espana{
+    position: relative;
+}
+
+.finland::after{
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    bottom: 10px;
+    right: 40px;
+    background-image: url(Imagenes/finlandia.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    
+}
+
+.alemania::after{
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    bottom: 10px;
+    right: 60px;
+    background-image: url(Imagenes/alemania.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+.italia::after{
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    bottom: 10px;
+    right: 40px;
+    background-image: url(Imagenes/italia.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+.espana::after{
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    bottom: 10px;
+    right: 60px;
+    background-image: url(Imagenes/espana.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+.winner4{
+    background-image: url(Imagenes/winner4.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+.winner5{
+    background-image: url(Imagenes/winner5.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+.winner6{
+    background-image: url(Imagenes/winner6.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+.winner7{
+    background-image: url(Imagenes/winner7.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+.negro{
+    background-color: black;
+}
+
+.desplegable{
+    display: none;
+}
+
+.movileResolutionTitle{
+     display: none;   
+}
+
+.csSectionInfo{
+    display: flex;
+    flex-direction:column;
+}
+
+.csSectionInfo > div{
+    flex:1;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+
+.csSectionInfo > div > p{
+    flex:1;
+    width: 50%;
+}
+
+.cuerpoInfo{
+    font-size: 1.2em;
+    text-align: justify;
+    font-family: 'Asap', sans-serif;
+}
+
+@keyframes youtube{
+    from{
+        width: 60px;
+        height: 60px;
+    }
+    50%{
+        width: 70px;
+        height: 70px;
+    }
+    to{
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    nav ul li a {
+        font-size: 1em;
+    }
+    
+    .ocultar{
+        display: none;
+    }
+    .noticias{
+        flex-direction:column;
+    }
+    
+    .noticias > div{
+        min-height: 50%;
+        flex: 1;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        flex-direction: column;
+    }
+    
+    section{
+        height: 150%;
+    }
+    
+    .Videosnegro{
+        flex-direction:column;
+    }
+    
+    .Videosnegro > div{
+        min-height: 50%;
+        margin: 0%;
+        flex: 1;
+    }
+    
+    .videos > div{
+        margin: 0;
+    }
+    .copyright{
+        margin-top: 2%;
+    }
+    
+    #titulo{
+        font-size: 1.2em;
+    }
+    
+    #texto{
+        font-size: 0.75em;
+    }
+    
+    .headRedes > div {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .img-face{
+        width: 60px;
+        height: 60px;
+    }
+    .fotoInsta{
+        flex: 1 0 100%;
+        height: 100%;
+    }
+    
+    .tweet{
+        flex: 1 0 100%;
+        height: 70%;
+    }
+    .cuerpoTweet{
+        margin-left: 5%;
+    }
+    
+    .headerTweet > p {
+        font-size: 0.5em;
+    }
+    
+    .hallSection1{
+        height: 375%;
+    }
+    
+    .hallSection1 > p{
+        height: 5%;
+    }
+    
+    .hallSection1 > div{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap:wrap;
+    }
+    
+    .hallSection1 > div > div > div{
+        flex: 1 0 100%;
+    }
+    
+    #last2{
+        order: -1;
+    }
+    
+    .derecha{
+        left:10px;
+        right: 0;
+    }
+    
+    .bioButton a {
+        font-size: 1em;
+    }
+    
+    #last1:before {
+        left: 45%;
+        bottom: -15px;
+    }
+
+    #last2:before {
+        left: 45%;
+        bottom: -15px;
+    }
+
+    #last3:before {
+        left: 45%;
+        bottom: -15px;
+    }
+    
+    .hallSection2{
+        height: 200%;
+    }
+    
+    .hallSection2 > div{
+        width: 100%;
+        display: flex;
+        flex-direction:column;
+        flex-wrap:wrap;
+    }
+    
+    .img-pilots{
+        background-size: cover;
+    }
+    
+    .alemania::after{
+        right: 40px;
+    }
+
+    .espana::after{
+        right: 40px;
+    }
+    
+    .csSection1{
+        height: 120%;
+    }
+    
+    .csTitulo1{
+        font-size: 1.5em;
+    }
+    
+    .csSection1 > div {
+        flex:1 0 50%;
+        height: 33%;
+    }
+    
+    .csSection1 p {
+        font-size: 1em;
+    }
+    
+    .csSection2{
+        padding: 1px 1px 1px 1px;
+        flex-wrap:wrap;
+        height: 150%;
+    }
+
+    .csSection2 > div {
+        flex: 1 0 100%;
+        height: 33%;
+        padding: 10px 10px 10px 10px;
+    }
+
+
+    .titleTicket{
+        flex: 1 0 10%;
+        font-size: 1.2em;
+        display: flex;
+        align-items:center;
+        justify-content:center;
+        font-family: 'Khula', sans-serif;
+    }
+
+    .cuerpoTicket{
+        flex: 1 0 20%;
+        font-size: 1.2em;
+    }
+
+    .contenedorBoton{
+        flex: 1 0 20%;
+    }
+
+    .botonTicket{
+        font-size: 1.2em;
+    }
+    
+    #foto1:before {
+        bottom: 60%;
+        right: -15px;
+    }
+    
+    #foto2:before {
+        bottom: 60%;
+        right: -15px;
+    }
+    
+    #foto3:before {
+        top: 40%;
+        right: -15px;
+    }
+    
+    .desplegable{
+        display: block;
+        width: 100%;
+        height: auto;
+        position: fixed;
+        top: -100%;
+        background-color: #6c6c6c;
+    }
+    
+    #toggle-1 {
+        display: none;
+    }
+    
+    #toggle-1:checked ~ .desplegable {
+        overflow: hidden;
+        animation: animacion 0.5s 1 linear;
+        animation-timing-function: ease-in;
+        animation-fill-mode: forwards;
+    }
+    
+    label {
+        float: left;
+        margin-left: 10px;
+    }
+    
+    .movileResolutionCorrect{
+        height: 50px;
+    }
+    
+    .movileResolutionHeader{
+        display: block;
+        position: fixed;
+        top: 0%;
+        height: 50px;
+        width: 100%;
+        z-index: 9999;
+    }
+    
+    .img-menu{
+        object-fit: contain;
+        width:40px;
+        height:40px;
+        margin-top: 5px;
+    }
+    
+    nav ul{
+        flex-direction:column;
+        align-items: flex-start;
+        justify-content: flex-end;
+    }
+    
+    .movileResolutionTitle{
+        display: inline-flex;
+        float: right;
+        width: auto;
+        height: 100%;
+        justify-content:center;
+        align-items:center;
+        color: white;
+        padding-right: 20px;
+        font-size: 1.8em;
+    }
+    
+    .csSectionInfo > div > p{
+        flex: 1;
+        width: 100%;
+    }
+    
+    .cuerpoInfo{
+        font-size: 1.2em;
+        text-align: justify;
+        font-family: 'Asap', sans-serif;
+        padding-right:15px;
+        padding-left:15px;
+    }
+    
+    .separadorMovile{
+        width: 10%
+    }
+    
+}
+
+@media only screen and (max-width: 1000px) {
+    .ocultar2{
+        display: none;
+    }
+    
+    .fotoInsta{
+        flex: 1 0 100%;
+        height: 100%;
+    }
+    
+    .winner4{
+        background-size: cover;
+    }
+    
+    .winner5{
+        background-size: cover;
+    }
+    
+    .winner6{
+        background-size: cover;
+    }
+    
+    .winner7{
+        background-size: cover;
+    }
+    
+    .botonTicket{
+        font-size: 1.2em;
+    }
+    
+    .bioButton > a{
+        font-size: 1.2em;
+    }
+}
+
+
+@keyframes animacion {
+    0% {
+        top: -100%;
+    }
+    100% {
+        top: 50px;
+    }
+}
