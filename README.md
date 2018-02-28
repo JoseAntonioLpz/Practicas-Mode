@@ -5,3 +5,5 @@ Restaurante -> Diseño no fluido a full width
 Fotografia -> Diseño fluido desde full width a dispositivos moviles
 <br>
 Rally -> Flex boxing
+<br>
+Corea -> Flex boxing
