@@ -1,0 +1,1268 @@
+@import url(reset.css);
+
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+a, p , div, section, nav, aside, h1, h2, h3, h4, h5, input, textarea, ul, li{
+    font-family: 'Oswald', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+.movil{
+    display: none;
+}
+
+.desplegable{
+    display: none;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+header{
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    z-index: 99999;
+}
+
+
+nav a{
+    width: 100%;
+    padding: 20px;
+    font-size: 2.5vw;
+    color: white;
+}
+
+nav a:hover{
+    color: #afafaf;
+}
+
+.logo{
+    position: absolute;
+    object-fit: contain;
+    height: 200px;
+    top: -20px;
+    left: -20px;
+}
+
+section{
+    border: 10px solid white;
+}
+
+/*.overlay{
+    width: 100%;
+    height: 100%;
+    background-image: url(Imagenes/overlay.png);
+    position: absolute;
+    bottom: 0;
+    right:0;
+}*/
+
+.section1{
+    width: 100%;
+    height: 100%;
+    background-image: url(../Imagenes/intro.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    
+    /*filter: brightness(50%);*/
+    
+    background-color: black;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    position: relative;
+}
+
+.section1 > div{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    width: 100%;
+}
+
+.section1 div p{
+    font-size: 2.5vw;
+    color: white;
+    text-align: center;
+}
+
+.section1 hr{
+    width: 20%;
+    height: 1px;
+    border:0;
+    background-color: white;
+}
+
+.section1 > a {
+    position: absolute;
+    bottom: 20px;
+    /*left:50%;*/
+    text-align: center;
+    margin: 0 auto;
+    z-index: 99999;
+}
+
+.section1 > a > img {
+    object-fit: contain;
+    width: 50px;
+    transform: rotateZ(90deg);
+}
+
+.section2{
+    width: 100%;
+    height: 100%;
+    background-image: url(../Imagenes/section1.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+
+.separadorS2{
+    height:15%;
+}
+
+.boSection{
+    height:85%;
+    width: 35%;
+    margin-left: 2%;
+}
+
+.titleSection{
+    font-size: 1.8vw;
+    color: white;
+}
+
+.boSection hr{
+    border:0;
+    background-color: white;
+    width: 40%;
+    height: 1px;
+    float: left;
+}
+
+.boSection p {
+    font-size: 1vw;
+    color: white;
+    text-align: justify;
+}
+
+.boSection a {
+    font-size: 1.5vw;
+    color: white;
+    border:1px solid white;
+    width: 125px;
+    height: 50px;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    margin-right: 20px;
+}
+
+.boSection a:hover{
+    color: #afafaf;
+}
+
+/*.boSection pre{
+    font-size: 1.3em;
+    color:white;
+}*/
+
+.foSection{
+    position: absolute;
+    background-color: white;
+    color: black;
+    bottom: 0px;
+    right: 30px;
+    font-size: 1.8vw;
+    width: 100px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    height: 50px;
+}
+
+.section3{
+    width: 100%;
+    height: 70%;
+    background-image: url(../Imagenes/seoul.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.section4{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fotoSeoul{
+    flex:1 0 32%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin: 10px;
+}
+
+#seoul1{
+    background-image: url(../Imagenes/port_seoul1.jpg);
+}
+
+#seoul2{
+    background-image: url(../Imagenes/port_seoul2.jpg);
+}
+
+#seoul3{
+    background-image: url(../Imagenes/port_seoul3.jpg);
+}
+
+#seoul4{
+    background-image: url(../Imagenes/port_seoul4.jpg);
+}
+
+#seoul5{
+    background-image: url(../Imagenes/port_seoul5.jpg);
+}
+
+#seoul6{
+    background-image: url(../Imagenes/port_seoul6.jpg);
+}
+
+.section5{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    position: relative;
+    justify-content:center;
+    align-items:center;
+    background-image: url(../Imagenes/history.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.titleS5{
+    font-size: 4vw;
+    color: white;
+}
+
+.left30{
+    left: 30px;
+}
+
+.section6{
+    width: 100%;
+    height: 70%;
+    justify-content:center;
+    align-items:center;
+    display: flex;
+    flex-direction:column;
+}
+
+footer{
+    width: 100%;
+    height: 40%;
+}
+
+footer div:nth-child(1){
+    width: 100%;
+    height: 80%;
+    background-color: #494949;
+    position: relative;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+
+footer div:nth-child(2){
+    width: 100%;
+    height: 20%;
+    background-color: #232323;
+    display: flex;
+}
+
+footer div:nth-child(2) p {
+    flex:1;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    font-size: 1.2vw;
+}
+
+.imgFooter{
+    height: 250px;
+    position: absolute;
+    bottom: 15%;
+    left: 5%;
+}
+
+.hrFooter{
+    width: 30%;
+    background-color: white;
+    border:0;
+    height: 1px;
+    position: absolute;
+    bottom: 10%;
+    margin: 0 auto;
+    /*left:50%;*/
+}
+
+.separadorS6{
+    height: 10%;
+}
+
+.navFooter a {
+    color: white;
+    font-size: 2.5vw;
+}
+
+.section6 p{
+    /*text-align: center;*/
+    font-size: 1.3vw;
+}
+
+/*pre{
+    font-size: 1.5em;
+}*/
+
+.redes{
+    margin-top: 20px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.textS6{
+    width: 50%;
+    color:#494949;
+    text-align: justify;
+}
+
+.redes p{
+    font-size: 2vw;
+    color:#494949;
+}
+
+.redes img{
+    height: 50px;
+    object-fit: contain;
+    padding-right: 35%;
+}
+
+header.noIndex{
+    background-color: #494949;
+    border: 10px solid white;
+}
+
+.section1Contact{
+    width: 100%;
+    height: 50%;
+    background-color: red;
+    background-image: url('../Imagenes/contact2.jpg');
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.section1Contact p {
+    font-size: 2.5vw;
+    color: white;
+}
+
+.section2Contact{
+    width: 100%;
+    height: 75%;
+    display: flex;
+}
+
+.section2Contact aside{
+    flex:1;
+}
+
+.section2Contact aside:nth-child(1){
+    /*background-color: purple;*/
+}
+
+.section2Contact aside:nth-child(1) > div{
+    width: 100%;
+    height: 50%;
+    /*display: flex;
+    justify-content:center;
+    text-align: center;
+    flex-direction:column;*/
+}
+
+.section2Contact aside > div > h1{
+    font-size: 2vw;
+    padding-left: 15%;
+}
+
+.noPadding{
+    padding-left: 0 !important;
+}
+
+.section2Contact aside:nth-child(1) > div  p{
+    padding: 20px;
+    font-size: 1.3vw;
+    text-align: left;
+    padding-left: 20%;
+}
+
+.section2Contact aside:nth-child(1) > div  p:nth-child(1){
+    padding-top: 5%;
+}
+
+.contacto p:before{
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-left: 20px;
+}
+
+.contacto{
+    display: block;
+} 
+
+.contacto  p:nth-child(1):before{
+    background-image: url(../Imagenes/phone.png);
+}
+
+.contacto  p:nth-child(2):before{
+    background-image: url(../Imagenes/movil.png);
+}
+
+.contacto  p:nth-child(3):before{
+    background-image: url(../Imagenes/mail.png);
+}
+
+
+.contacto  p:nth-child(4):before{
+    background-image: url(../Imagenes/dress.png);
+}
+
+.section2Contact aside:nth-child(1) a{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 20px;
+    margin-top: 5%;
+}
+
+.redContact{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 30%;
+}
+
+#twitter{
+    background-image: url(../Imagenes/twitter.svg);
+}
+
+#facebook{
+    background-image: url(../Imagenes/facebook.svg);
+}
+
+#instagram{
+    background-image: url(../Imagenes/instagram.png);
+}
+
+.maps{
+    width: 100%;
+    height: 40%;
+}
+
+.section2Contact aside:nth-child(2) > div{
+    
+    display: flex;
+    flex-direction:column;
+}
+
+.section2Contact aside:nth-child(2) > div > div{
+    width: 70%;
+}
+
+.contactForm{
+    margin: 5% 0 0 0;
+}
+
+.contactForm input[type="text"]{
+    width:100%;
+    height: 35px;
+    border-radius: 5px;
+    border:1px solid black;
+    margin: 5px 0 0 0;
+    padding-left: 5px;
+}
+
+.contactForm textarea{
+    width: 100%;
+    margin: 5px 0 0 0;
+    height: 200px;
+    border-radius: 5px;
+    border:1px solid black;
+    padding-left: 5px;
+}
+
+.buttons{
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.contactForm input[type="submit"]{
+    margin: 5px 10px 0 0;
+    width:20%;
+    height: 30px;
+    border:1px solid black;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.contactForm input[type="submit"]:hover{
+    color:white;
+    background-color: black;
+    cursor: pointer;
+}
+
+.contactForm input[type="reset"]{
+    margin: 5px 0 0 10px;
+    width:20%;
+    height: 30px;
+    border:1px solid black;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.contactForm input[type="reset"]:hover{
+    color:white;
+    background-color: black;
+    cursor: pointer;
+}
+
+.section1Travel{
+    width: 100%;
+    height: 50%;
+    background-image: url('../Imagenes/travel.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.section1Travel p{
+    font-size: 2.5vw;
+    color: white;
+}
+
+.seccion2Travel{
+    width: 100%;
+    height: 100%;
+}
+
+.textTravel{
+    font-size: 1.5vw;
+    width: 50%;
+    text-align: justify;
+}
+
+.subSectionTravel{
+    width: 100%;
+    height: 90%;
+}
+
+.subSectionTravel > div{
+    width: 100%;
+    height: 50%;
+}
+
+.subSectionTravel > div > div{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+#barco{
+    background-image: url(../Imagenes/plane.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    float: right;
+    position: relative;
+}
+
+#barco:before{
+    content: '';
+    background-color: white;
+    display: block;
+    width: 50px;
+    height: 50px;
+    transform: rotateZ(45deg);
+    position: absolute;
+    top:20%;
+    left:-25px;
+}
+
+#avion{
+    background-image: url(../Imagenes/boat.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    float: left;
+    position: relative;
+    border-bottom:10px solid white;
+}
+
+#avion:after{
+    content: '';
+    background-color: white;
+    display: block;
+    width: 50px;
+    height: 50px;
+    transform: rotateZ(45deg);
+    position: absolute;
+    bottom:20%;
+    right:-25px;
+}
+
+.travelSectionText{
+    display: flex;
+    justify-content:center;
+    flex-direction:column;
+    align-items:center;
+}
+
+.description{
+    margin-bottom: 6% !important;
+    text-align: center !important;
+    width: 100% !important;
+}
+
+.travelSectionText > p{
+    margin-bottom: 1%;
+    margin-top: 1%;
+    font-size: 1.3vw;
+    text-align: left;
+    width: 40%;
+}
+
+.travelSectionText > ul{
+    list-style: none;
+    font-size: 1vw;
+    width: 35%;
+}
+
+.travelSectionText > li{
+    list-style: none;
+    font-size: 1vw;
+    text-align: left;
+}
+
+.travelhr{
+    width: 40%;
+    border:0;
+    background-color: black;
+    height: 1px;
+}
+
+.section1Routes{
+    background-image: url(../Imagenes/routes.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    font-size: 2.5vw;
+    color: white;
+}
+
+.section2Routes{
+    height: 200%;
+    width: 100%;
+}
+
+.section3Routes{
+    height: 150%;
+    width: 100%;
+}
+
+.RouteTitle{
+    font-size: 2vw;
+}
+
+.subTitleRoute{
+    font-size: 1.5vw;
+}
+
+.subRoute1{
+    width: 100%;
+    height: 25%;
+    /*position: relative;
+    display: flex;
+    justify-content:center;
+    align-items:center;*/
+}
+
+.subRoute1 > div:nth-child(2){
+    height: 50%;
+    width: 90%;
+    background-color: #3a57ff;
+    margin: 0 auto;
+    position: relative;
+}
+
+.imgRoutes{
+    object-fit: cover;
+    position: absolute;
+    height: 200%;
+    width: 30%;
+} 
+
+.img1{
+    bottom: 0px;
+    left:10%;
+}
+
+.img2{
+    bottom: 0px;
+    right:10%;
+}
+
+.height50{
+    height: 50%;
+}
+
+.subRoute1 > div:nth-child(2) > div{
+    float: right;
+    width: 50%;
+    height: 100%;
+}
+
+.left{
+    float: left !important;
+}
+
+.marginleft25{
+    margin-left: 25px; 
+}
+
+.subRoute1 > div:nth-child(2) > div > h1{
+    color: white;
+    font-size: 1.5vw;
+}
+
+.subRoute1 > div:nth-child(2) > div > p{
+    color: white;
+    text-align: justify;
+    margin-right: 25px; 
+    font-size: 0.9vw;
+}
+
+.sep100{
+    height: 100px;
+}
+
+.subRoute2{
+    height: 45%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.subRoute2 > div{
+    flex:1 0 33%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 10px solid white;
+}
+
+#seul1{
+    background-image: url(../Imagenes/por1.jpg);
+}
+
+#seul2{
+    background-image: url(../Imagenes/por2.jpg);
+}
+
+#seul3{
+    background-image: url(../Imagenes/por3.jpg);
+}
+
+#seul4{
+    background-image: url(../Imagenes/por4.jpg);
+}
+
+#seul5{
+    background-image: url(../Imagenes/por5.jpg);
+}
+
+#seul6{
+    background-image: url(../Imagenes/por6.jpg);
+}
+
+.fullwidth{
+    width: 100%;
+} 
+
+.Hpuent{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../Imagenes/hpuent.jpg);
+    height: 20%;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    color: white;
+}
+
+.rest{
+    height: 80%;
+}
+
+.subSectionH{
+    width: 100%;
+    height: 50%;
+}
+
+.subSectionH > div{
+    width: 50%;
+    height: 100%;
+}
+
+.Hleft{
+    float: left;
+}
+
+.Hrigth{
+    float: right;
+}
+
+#playaH{
+    border-top:10px solid white;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../Imagenes/playicaH.jpg);
+}
+
+#tempH{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../Imagenes/tempH.jpg);
+    border-bottom:10px solid white;
+}
+
+.flexCenter{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.column{
+    flex-direction:column;
+}
+
+.desc{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.desc p{
+    font-size: 1.3vw;
+    text-align: justify;
+}
+
+@media only screen and (max-width: 972px) {
+    .titleSection{
+        font-size: 2.5vw;
+        color: white;
+    }
+    
+    .boSection hr{
+        border:0;
+        background-color: white;
+        width: 40%;
+        height: 1px;
+        float: left;
+    }
+    
+    .boSection p {
+        font-size: 1.5vw;
+    }
+    
+    .boSection a {
+        font-size: 2vw;
+    }
+    
+    .section6 p{
+        font-size: 1.8vw
+    }
+    
+    .section1 div p{
+        font-size: 3vw;
+    }
+    
+    .imgRoutes{
+        height: 150%;
+        width: 40%;
+    }
+    
+    .img1{
+        left: 5%;
+    }
+    
+    .img2{
+        right: 5%;
+    }
+    
+    .subRoute1 > div:nth-child(2) > div > p{
+        font-size: 1.2vw;
+    }
+    
+    .subTitleRoute{
+        font-size: 2vw;
+    }
+    
+    .desc p{
+        font-size: 1.5vw
+    }
+    
+    .RouteTitle{
+        font-size: 2.5vw;
+    }
+    
+    .travelSectionText > p{
+        font-size:1.8vw;
+    }
+    
+    .travelSectionText > ul{
+        font-size: 1.3vw;
+    }
+    
+    .textTravel{
+        font-size: 2vw;    
+    }
+    
+    .section2Contact aside:nth-child(1) > div p{
+        font-size: 1.5vw;
+    }
+    
+    .contacto p::before{
+        content: '';
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding-left: 10px;
+    }
+    
+}
+
+@media only screen and (max-width: 852px) {
+    .oculto{
+        display: none;
+    }
+    
+    .boSection a{
+        font-size: 2.5vw;
+        width: 100px;
+        height: 30px;
+        line-height: 30px;
+    }
+    
+    .titleSection{
+        font-size: 3.5vw;
+    }
+    
+    .boSection p{
+        font-size: 3vw;
+    }
+    
+    .boSection{
+        width: 75%;
+    }
+    
+    .foSection{
+        font-size: 2.5vw;
+    }
+    
+    .titleS5{
+        font-size: 5vw;
+    }
+    
+    .section6 p{
+        font-size: 2.5vw;
+    }
+    
+    .textS6{
+        width: 75%;
+    }
+    
+    nav a{
+        font-size: 3.5vw;
+    }
+    
+    .navFooter a{
+        font-size: 3.5vw;
+    }
+    
+    footer div:nth-child(2) p{
+        font-size: 1.8vw;
+    }
+    
+    .section1 div p{
+        font-size: 4vw;
+    }
+    
+    .subRoute2 > div{
+        flex:1 0 50%;
+    }
+    
+    .imgRoutes{
+        width: 45%;
+        height: 100%;
+    }
+    
+    .img1{
+        left: 0%;
+    }
+    
+    .img2{
+        right: 0%;
+    }
+    
+    .subRoute1 > div:nth-child(2){
+        height: 75%;
+    }
+    
+    .subRoute1 > div:nth-child(2) > div > h1{
+        font-size: 2.3vw;
+    }
+    
+    .subRoute1 > div:nth-child(2) > div > p{
+        font-size: 2vw;
+    }
+    
+    .desc p{
+        font-size: 2.5vw;
+    }
+    
+    .Hleft{
+        float: left;
+        width: 100% !important;
+    }
+    
+    .Hrigth{
+        float: left;
+        width: 100% !important;
+    }
+    
+    .section1Routes{
+        font-size: 4vw;
+    }
+    
+    .RouteTitle{
+        font-size: 3.5vw;
+    }
+    
+    .section1Travel p{
+        font-size: 4vw;
+    }
+    
+    .textTravel{
+        font-size: 2.8vw;
+        width: 100%;
+    }
+    
+    .travelSectionText > p{
+        font-size: 3.5vw;
+    }
+    
+    .travelSectionText > ul{
+        font-size: 3vw;
+        width: 50%;
+    }
+    
+    #barco{
+        float: left;
+        width: 100%;
+    }
+    
+    #barco::before{
+        display: none;
+    }
+    
+    .subSectionTravel > div > div{
+        width: 100%;
+    }
+    
+    #avion::after{
+        display: none;
+    }
+    
+    .section1Contact p{
+        font-size: 4vw;    
+    }
+    
+    .section2Contact{
+        flex-wrap:wrap;
+        height: 150%;
+    }
+    
+    .section2Contact aside{
+        flex:1 0 100%;
+    }
+    
+    .section2Contact aside:nth-child(1) > div{
+        height: 75%;
+    }
+    
+    .redContact{
+        justify-content:center;
+    }
+    
+    .section2Contact aside:nth-child(1) a{
+        width: 30px;
+        height: 30px;
+    }
+    
+    .section2Contact aside:nth-child(1) > div p{
+        padding-top: 5px;
+        font-size: 3vw;
+    }
+    .section2Contact aside > div > h1{
+        font-size: 4vw;
+        text-align: center;
+        padding-left: 0%;
+    }
+    
+    .section2Contact aside:nth-child(2) > div > div{
+        width: 100%;
+    }
+    
+    .contacto p::before{
+        width: 15px;
+        height: 15px;
+    }
+    
+    .redes img{
+        height: 30px;
+    }
+    
+    .movil{
+        display: block;
+        width: 100%;
+        height: 70px;
+        background-color: #494949;
+        position: fixed;
+        top: 0;
+        z-index: 999;
+        border: 10px solid white;
+        border-bottom:0;
+    }
+    
+    .logoMovil{
+        height: 100%;
+        width: 50%;
+        background-position: center left;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url(../Imagenes/04.png);
+        float: left;
+    }
+    
+    .desplegable{
+        display: block;
+        width:100%;
+        height: auto;
+        position: fixed;
+        top:-100%;
+        background-color: #494949;
+        border-right: 20px solid white;
+
+    }
+    
+    #toggle {
+        display: none;
+    }
+    
+    #toggle:checked ~ .desplegable {
+        overflow: hidden;
+        animation: animacion 0.5s 1 linear;
+        animation-timing-function: ease-in;
+        animation-fill-mode: forwards;
+    }
+    
+    .menuImage{
+        float: right;
+        width: 50%;
+    }
+    
+    .img-menu{
+        height: 40px;
+        object-fit: contain;
+        float: right;
+        margin : 10px 10px;
+    }
+    
+    .desplegable a{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: block;
+        width: 100%;
+        text-align: right;
+    }
+}
+
+@keyframes animacion {
+    0% {
+        top: -100%;
+    }
+    100% {
+        top: 70px;
+    }
+}
